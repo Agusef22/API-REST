@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gatitos Aleatorios</title>
+</head>
+<body>
+    <span id="error"></span>
+    <div id="randomMichis">
+        <h1 class="title">Gatitos Random</h1>
+        <div class="container-gatitos">
+            <div class="col">
+                <img id="imageCat" class="image" alt="">
+                <img id="btn" src="./icon/star-regular.svg" class="button-favorites"></img>
+            </div>
+            <div class="col">
+                <img id="imageCat2" class="image" alt="">
+                <img id="btn2" src="./icon/star-regular.svg" class="button-favorites"></img>
+            </div>
+            <div class="col">
+                <img id="imageCat3" class="image" alt="">
+                <img id="btn3" src="./icon/star-regular.svg" class="button-favorites"></img>
+            </div>
+        </div>
+        <img onclick="loadRandomMichis()" src="./icon/reload.png" class="reload"></img>
+        <h2 class="title">Gatitos Favoritos</h2>
+        <div class="container-gatitos-favoritos">
+            
+        </div>
+        <h2 class="title">Sube la foto de tu gato</h2>
+        <section id="uploadingMichi">
+            <form id="uploadingForm">
+                <input class="inputUpload" id="file" type="file" name="file"/>
+                <button class="buttonUpload" type="button" onclick="uploadPhoto()">Subir foto de gato</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
